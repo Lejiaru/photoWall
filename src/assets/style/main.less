@@ -1,0 +1,41 @@
+* {
+    padding:0;
+    margin:0;
+}
+a {
+    text-decoration:none;
+}
+@theme:#f1f1fc;
+@color:#5755d9;
+@font-color:#50596c;
+
+.navSelf {
+    display: grid!important;
+    grid-template-columns: 1fr 6fr 1fr;
+    padding:2rem 0 2rem 3rem!important;
+    background: @theme;
+    color:@color;
+    a {
+        color:@font-color;
+    }
+    .rightSelf{
+    }
+}
+// 登录页面
+.Login {
+    display: flex;
+    justify-content: center;
+    background: desaturate(@theme,50%);
+    .form {
+        width:15%;
+        margin-top:3rem;
+        background: #fefefe;
+        padding:5rem 8rem 10rem 5rem;
+        .login_tit {
+            margin-bottom: 2rem;
+            display: flex;
+            font-size:1.8rem;
+            justify-content:space-around;
+        }
+    }
+}
